@@ -1,0 +1,63 @@
+.wrapper {
+  border: 1px solid;
+  width: 300px;
+  height: 250px;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  height: 3em;
+  padding: 0.5em;
+  border-bottom: 5px solid black;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 17px;
+  background-image: url("./img/buttons.png");
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  outline: none;
+}
+
+#prev {
+  left: 16px;
+}
+
+#next {
+  background-position-x: -27px;
+  right: 16px;
+}
+
+#logo {
+  width: 110px;
+  height: 50px;
+}
+
+.slides {
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+  overflow: hidden;
+  min-height: 182px;
+}
+
+.slides li {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+
+.slides li:first-child {
+  left: 0;
+}
+
+img {
+  height: 181px;
+  width: 300px;
+}
